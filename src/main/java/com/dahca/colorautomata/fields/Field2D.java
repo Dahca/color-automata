@@ -1,8 +1,9 @@
-package fields;
+package com.dahca.colorautomata.fields;
+
 import java.awt.Point;
 import java.awt.Rectangle;
 
-import cells.*;
+import com.dahca.colorautomata.cells.*;
 
 /**
  * This represents a field constructed of 2D square cells
@@ -34,7 +35,7 @@ public abstract class Field2D<C extends Cell2D>
 	 */
 	public abstract C[][] step();
 	/**
-	 * 
+	 *
 	 * @return This field's cellular representation
 	 */
 	public C[][] getCells()

@@ -1,11 +1,13 @@
-package fields;
+package com.dahca.colorautomata.fields;
 import java.awt.Point;
 
-import rules.*;
-import cells.*;
+import com.dahca.colorautomata.rules.*;
+import com.dahca.colorautomata.cells.*;
 /**
- * This is a field that is represented by 2D square cells where the top edge continues to the bottom and the sides 
- * to one another - basically a simulation of 2D square cells on the surface of a toroid.
+ * This is a field that is represented by 2D square cells where the top edge
+ * continues to the bottom and the sides to one another - basically a
+ * simulation of 2D square cells on the surface of a toroid.
+ *
  * @author Ian
  *
  * @param <C> any Cell2D subclass

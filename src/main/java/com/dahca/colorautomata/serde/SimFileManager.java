@@ -1,11 +1,14 @@
-package serde;
+package com.dahca.colorautomata.serde;
+
 import java.io.*;
+
 public class SimFileManager
 {
 	public static void main(String[] args)
 	{
 		write(new int[10][10][10], "test.ino");
 	}
+
 	public static void write( Object obj, String filename )
 	{
 		try{
@@ -41,7 +44,7 @@ public class SimFileManager
 		}
 		else if( obj instanceof Object[] )
 		{
-			
+
 		}
 		return output_string;
 	}

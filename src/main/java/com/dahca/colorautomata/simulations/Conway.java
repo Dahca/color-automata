@@ -1,12 +1,13 @@
-package simulations;
+package com.dahca.colorautomata.simulations;
+
 import java.awt.Color;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.util.Random;
 
-import cells.*;
-import fields.*;
-import rules.*;
+import com.dahca.colorautomata.cells.*;
+import com.dahca.colorautomata.fields.*;
+import com.dahca.colorautomata.rules.*;
 
 public class Conway extends WrapAroundField2D<ColorCell2D> implements B3_S23<ColorCell2D>
 {
@@ -87,8 +88,8 @@ public class Conway extends WrapAroundField2D<ColorCell2D> implements B3_S23<Col
 			{
 				case ALIVE:
 					alive++;
-				case DEAD:	
-				default:	
+				case DEAD:
+				default:
 			}
 		}
 		ColorCell2D current = field[x][y];
@@ -229,5 +230,5 @@ public class Conway extends WrapAroundField2D<ColorCell2D> implements B3_S23<Col
 		}
 		return Color.BLACK;
 	}
-	
+
 }

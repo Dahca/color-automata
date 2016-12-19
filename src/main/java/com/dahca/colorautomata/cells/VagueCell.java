@@ -1,7 +1,7 @@
-package cells;
+package com.dahca.colorautomata.cells;
 /**
- * Represents the concept of a Cell for simulation. This high-level cell view only has information about the 
- * state of the cell.
+ * Represents the concept of a Cell for simulation. This high-level cell view
+ * only has information about the state of the cell.
  * @author Ian
  *
  */
@@ -12,8 +12,9 @@ public abstract class VagueCell
 	 */
 	private CellState state = CellState.DEAD;
 	/**
-	 * Fetch the current state of the cell. If uninitialized, the state of the cell defaults
-	 * to CellState.DEAD
+	 * Fetch the current state of the cell. If uninitialized, the state of the
+   * cell defaults to CellState.DEAD.
+   *
 	 * @return CellState state - the current state of the cell
 	 */
 	public CellState getState()

@@ -1,6 +1,6 @@
-package rules;
+package com.dahca.colorautomata.rules;
 
-import cells.*;
+import com.dahca.colorautomata.cells.*;
 /**
  * Defines under what conditions are a cell's state changed.
  * @author Ian
@@ -10,11 +10,11 @@ import cells.*;
 public interface Rules2D<C extends Cell2D>
 {
 	/**
-	 * Possibilities for cells to be born
+	 * Possibilities for cells to be born.
 	 */
 	static int[] BORN = new int[0];
 	/**
-	 * Possibilities for cells to stay alive
+	 * Possibilities for cells to stay alive.
 	 */
 	static int[] DIES = new int[0];
 	/**

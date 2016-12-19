@@ -1,6 +1,7 @@
-package cells;
+package com.dahca.colorautomata.cells;
 import java.awt.Rectangle;
-/** 
+
+/**
  * This cell represents a 2D rectangular Cell.
  * @author Ian Neal
  *

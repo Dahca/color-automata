@@ -1,14 +1,16 @@
-package simulations;
+package com.dahca.colorautomata.simulations;
+
 import javax.swing.*;
 
-import cells.CellState;
-import cells.ColorCell2D;
+import com.dahca.colorautomata.cells.CellState;
+import com.dahca.colorautomata.cells.ColorCell2D;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+
 public class Display extends JFrame
 {
 	private Pane p;
@@ -21,7 +23,7 @@ public class Display extends JFrame
 		private Graphics2D gr;
 		private boolean init = false;
 		private boolean paused = true;
-		
+
 		private int[][] glidergun = {
 				{24},
 				{22,24},
@@ -31,7 +33,7 @@ public class Display extends JFrame
 				{0,1,10,14,16,17,22,24},
 				{10,16,24},
 				{11,15},
-				{12,13}	
+				{12,13}
 		};
 		private int[][] r_peppermint = {
 				{1,2},
@@ -164,31 +166,31 @@ public class Display extends JFrame
 		public void mousePressed(MouseEvent e)
 		{
 			// TODO Auto-generated method stub
-			
+
 		}
 		@Override
 		public void mouseReleased(MouseEvent e)
 		{
 			// TODO Auto-generated method stub
-			
+
 		}
 		@Override
 		public void mouseEntered(MouseEvent e)
 		{
 			// TODO Auto-generated method stub
-			
+
 		}
 		@Override
 		public void mouseExited(MouseEvent e)
 		{
 			// TODO Auto-generated method stub
-			
+
 		}
 		@Override
 		public void keyTyped(KeyEvent e)
 		{
 			// TODO Auto-generated method stub
-			
+
 		}
 		@Override
 		public void keyPressed(KeyEvent e)
@@ -204,7 +206,7 @@ public class Display extends JFrame
 		public void keyReleased(KeyEvent e)
 		{
 			// TODO Auto-generated method stub
-			
+
 		}
 	}
 	public Display(int x, int y)
@@ -220,7 +222,7 @@ public class Display extends JFrame
 	{
 		return p;
 	}
-	
+
 	//main
 	public static void main(String[] args)
 	{

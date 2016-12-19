@@ -1,4 +1,4 @@
-package cells;
+package com.dahca.colorautomata.cells;
 
 import java.awt.Color;
 /**
@@ -15,7 +15,7 @@ public class ColorCell2D extends Cell2D
 		setState(CellState.DEAD);
 	}
 	/**
-	 * 
+	 *
 	 * @return This cell's color
 	 */
 	public Color getColor()
@@ -23,7 +23,7 @@ public class ColorCell2D extends Cell2D
 		return color;
 	}
 	/**
-	 * Sets the cell's color to a pre-defined color object 
+	 * Sets the cell's color to a pre-defined color object
 	 * @param c - java.awt.Color object
 	 */
 	public void setColor( Color c )
@@ -42,10 +42,10 @@ public class ColorCell2D extends Cell2D
 		color = genColor(red,green,blue);
 	}
 	/**
-	 * This function generates a color based on rgb values. However, instead of 
-	 * creating an error on values outside of the 0-255 range accepted for rgb values, 
+	 * This function generates a color based on rgb values. However, instead of
+	 * creating an error on values outside of the 0-255 range accepted for rgb values,
 	 * this will adjust the values so that the parameters are either rounded up to 0 or down
-	 * to 255. 
+	 * to 255.
 	 * @param red
 	 * @param green
 	 * @param blue
